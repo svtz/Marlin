@@ -804,14 +804,15 @@
  * following movement settings. If fewer factors are given than the
  * total number of extruders, the last value applies to the rest.
  */
-#define DISTINCT_E_FACTORS
+//#define DISTINCT_E_FACTORS
 
 /**
  * Default Axis Steps Per Unit (steps/mm)
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 417, 430 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 423 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.3, 80.8, 400, 417, 430 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1202,8 +1203,8 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
-#define INVERT_E1_DIR true
+#define INVERT_E0_DIR false
+#define INVERT_E1_DIR false
 #define INVERT_E2_DIR true
 #define INVERT_E3_DIR true
 #define INVERT_E4_DIR true
@@ -2066,8 +2067,8 @@
 //
 // ULTIPANEL as seen on Thingiverse.
 //
-#define ULTIPANEL
-#define NEWPANEL
+//#define ULTIPANEL
+//#define NEWPANEL
 
 //
 // PanelOne from T3P3 (via RAMPS 1.4 AUX2/AUX3)
@@ -2106,7 +2107,7 @@
 //
 // Generic 16x2, 16x4, 20x2, or 20x4 character-based LCD.
 //
-#define ULTRA_LCD
+//#define ULTRA_LCD
 
 //=============================================================================
 //======================== LCD / Controller Selection =========================
